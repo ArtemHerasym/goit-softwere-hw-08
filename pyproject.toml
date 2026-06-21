@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "module-s8-homework"
+version = "0.1.0"
+description = ""
+authors = ["Art-eri-ya <gerasartem4@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.14"
+mongoengine = "^0.29.3"
+pymongo = "^4.17.0"
+pika = "^1.4.1"
+faker = "^40.23.0"
+redis = "^8.0.0"
+redis-lru = "^0.1.2"
+python-dotenv = "^1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
