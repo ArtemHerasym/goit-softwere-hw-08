@@ -13,12 +13,12 @@ def main():
         contact_id = body.decode()
         contact = Contact.objects(id=contact_id).first()
 
-        print(f"Sending email to {contact.email}...")
-        time.sleep(1)
-
         if not contact:
             print("Contact not found")
             return
+
+        print(f"Sending email to {contact.email}...")
+        time.sleep(1)
 
         contact.is_sent = True
         contact.save()

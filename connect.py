@@ -3,6 +3,7 @@ from mongoengine.connection import get_connection
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
 
 mongo_uri = os.getenv("MONGO_URI")
 mongo_db = os.getenv("MONGO_DB")

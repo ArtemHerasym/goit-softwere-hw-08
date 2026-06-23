@@ -8,7 +8,7 @@ with open("quotes.json", "r", encoding="utf-8") as f:
         author_obj = Author.objects(fullname=quote["author"]).first()
         if not author_obj:
            continue
-        if Quote.objects(author=author_obj).first():
+        if Quote.objects(quote=quote["quote"]).first():
            continue
 
         quote_obj = Quote(tags=quote["tags"], author=author_obj, quote=quote["quote"])
